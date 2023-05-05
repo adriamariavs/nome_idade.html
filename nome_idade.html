@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" lang="PT-BR">
+    <title>FASES DA VIDA</title>
+
+</head>
+<style>
+    body{
+        background-color: #ADD8E6;
+        text-align: center;
+    }
+    .titulo{
+        margin-top: 100px;
+    }
+    input{
+        border-radius: 20px;
+        background-color: #d6d6d6;
+        border-color: 1px solid  #000;
+        width: 15%;
+        text-align: center;
+    }
+    button{
+        border-radius: 20px;
+        background-color: #719caa;
+        width: 10%;
+    }
+</style>
+<script>
+    function fase(){
+        let idade= document.getElementById("idade");
+        if( idade.value<=12){
+            text.innerHTML="Você é criança!";
+        }
+        if( idade.value>=13 && idade.value<=20){
+            text.innerHTML="Você é adolecente!";
+        }
+        if( idade.value>=21 && idade.value<=65){
+            text.innerHTML="Você é adulto!";
+        }
+        if( idade.value>=65){
+            text.innerHTML="Você é idoso!";
+        }
+    }
+</script>
+<body>
+    <div class="titulo">
+        <h1>Qual sua fase da vida? Descubra!</h1>
+    </div>
+    <div class="info">
+        
+        <input class="input" type="text" id="Nome" value="Seu nome"><br>
+        <br>
+        <br>
+            
+            <input class="input" type="text"  id="idade" value="Sua idade"><br>
+            <br>
+            <br>
+            <button onclick="fase()">Veja!</button>
+            <div class="result">
+                <p id="text"></p>
+            </div>
+    </div>
+</body>
+</html>
